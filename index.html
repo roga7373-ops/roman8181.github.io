@@ -5,37 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Моя биография</title>
   <style>
+    /* 🌙 Общий тёмный стиль */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
-      background: #f4f4f4;
+      background-color: #0d1117; /* тёмно-серый фон */
+      color: #e6edf3; /* светлый текст */
     }
-    h1 {
+
+    h1, h2 {
+      text-align: center;
+      color: #58a6ff; /* голубой акцент */
+    }
+
+    .bio {
+      background: #161b22; /* чуть светлее фон блока */
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
       text-align: center;
     }
-    .bio {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #30363d;
+      box-shadow: 0 0 20px rgba(88,166,255,0.2);
     }
+
     iframe {
       width: 100%;
       height: 400px;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
   <h1>Моя биография</h1>
+
   <div class="bio">
-    <p>Привет! Меня зовут Иван Иванов. Я родился в 1995 году в Москве. Занимаюсь веб-разработкой и люблю создавать полезные сайты.</p>
+    <img src="photo.jpg" alt="Моё фото" class="photo">
+    <p>Привет! Меня зовут Иван Иванов. Я веб-разработчик и люблю создавать сайты, приложения и делиться знаниями.</p>
   </div>
 
   <h2>Моё видео</h2>
-  <iframe src="https://www.youtube.com/watch?v=G-lKm-IF2jg" allowfullscreen></iframe>
+  <iframe 
+    src="https://rutube.ru/play/embed/26389494b8acc7a535e448fbfbac6165" 
+    frameborder="0" 
+    allow="clipboard-write; autoplay" 
+    allowfullscreen>
+  </iframe>
+
+  <footer>
+    © 2025 Иван Иванов • Сделано с любовью 💻
+  </footer>
 </body>
 </html>
